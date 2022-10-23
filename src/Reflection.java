@@ -1,4 +1,3 @@
-import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
 class Testers {
     @Test(a=1, b=5)
@@ -9,7 +8,7 @@ class Testers {
 }
 
 public class Reflection{
-    public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
+    public static void main(String[] args){
         final Class<?> cls = Testers.class;
         Method[] methods = cls.getMethods();
         int a1 = 0;
